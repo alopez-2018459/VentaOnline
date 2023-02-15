@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "548cebea-16ba-45a4-88fa-2a9303e78d83",
+    "colName": "venta-online",
+    "created": "2023-02-15T02:48:38.596Z",
+    "sortNum": 20000,
+    "folders": [
+      {
+        "_id": "305f9922-28bc-489e-84c6-ec2b8c66693f",
+        "name": "Category",
+        "containerId": "",
+        "created": "2023-02-15T02:48:43.476Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "96725aaa-31c2-4356-bed7-1119aa697ef6",
+        "name": "Users",
+        "containerId": "",
+        "created": "2023-02-15T04:58:56.024Z",
+        "sortNum": 20000
+      }
+    ],
+    "settings": {
+      "headers": [],
+      "tests": [],
+      "options": {
+        "baseUrl": "localhost:2651"
+      }
+    }
+  }
+]
