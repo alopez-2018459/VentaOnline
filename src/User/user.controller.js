@@ -7,16 +7,31 @@ const { validateData, encrypt, checkPassword } = require('../utils/Validate');
 const { createToken } = require('../Services/jwt');
 
 const serverStatus = require('../Services/serverStatus');
+const { ensureAuth } = require('../Services/auth');
+
+let adminStatus = false;
 
 exports.test = async(req, res) => {
     serverStatus.internal200(res,'User is running');
 };
 
+exports.adminSave = async(req, res) => {
+
+    try {
+        adminStatus = true;
+        await this.save(req, res);
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+
 exports.save = async(req, res) => {
     try {
+        
         let data = req.body;
         
-        delete data.role;
+        if(adminStatus == false) delete data.role;
 
         data.password = await encrypt(data.password);
 
@@ -32,6 +47,11 @@ exports.save = async(req, res) => {
         return serverStatus.internal500(res, 'User not Created', err);
     }
 };
+
+
+
+
+
 
 exports.login = async(req, res) => {
     try {

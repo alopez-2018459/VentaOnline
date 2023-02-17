@@ -82,11 +82,11 @@
     "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
     "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
     "name": "save",
-    "url": "/user/save",
+    "url": "/user/register",
     "method": "POST",
     "sortNum": 60000,
     "created": "2023-02-15T06:44:20.290Z",
-    "modified": "2023-02-15T08:29:27.106Z",
+    "modified": "2023-02-17T05:04:04.578Z",
     "headers": [],
     "params": [],
     "body": {
@@ -103,7 +103,7 @@
         },
         {
           "name": "username",
-          "value": "alopez18"
+          "value": "alopez4"
         },
         {
           "name": "password",
@@ -119,7 +119,7 @@
         },
         {
           "name": "role",
-          "value": "admin"
+          "value": "pancho"
         }
       ]
     },
@@ -134,7 +134,7 @@
     "method": "POST",
     "sortNum": 70000,
     "created": "2023-02-15T07:37:04.056Z",
-    "modified": "2023-02-15T08:29:37.504Z",
+    "modified": "2023-02-17T04:52:12.616Z",
     "headers": [],
     "params": [],
     "body": {
@@ -143,7 +143,7 @@
       "form": [
         {
           "name": "username",
-          "value": "alopez18"
+          "value": "alopez7"
         },
         {
           "name": "password",
@@ -164,5 +164,58 @@
     "created": "2023-02-15T08:15:48.406Z",
     "modified": "2023-02-15T08:15:48.406Z",
     "headers": []
+  },
+  {
+    "_id": "b0619b34-7dee-432a-b997-a7e95d0d10e2",
+    "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
+    "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
+    "name": "save-admin",
+    "url": "/user/save-admin",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2023-02-17T03:50:50.354Z",
+    "modified": "2023-02-17T05:04:14.408Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VmMDRlMGFiNzNjZTFiOWQ1NWQ2ZmQiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJhbG9wZXo3IiwiZW1haWwiOiJhbG9wZXpAa2luYWwuZWR1Lmd0IiwicGhvbmUiOiIzMzAwMzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY2MDk1MzI2MTIsImV4cCI6MTY3NjYwOTUzOTgxMn0.jF0lIZkv9os0MAyZfAAIgjraSloW1YoGtWCRvm3COv4\""
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "alan"
+        },
+        {
+          "name": "surname",
+          "value": "lopez"
+        },
+        {
+          "name": "username",
+          "value": "alopez5"
+        },
+        {
+          "name": "password",
+          "value": "332"
+        },
+        {
+          "name": "email",
+          "value": "alopez@kinal.edu.gt"
+        },
+        {
+          "name": "phone",
+          "value": "339988"
+        },
+        {
+          "name": "role",
+          "value": "admin"
+        }
+      ]
+    },
+    "tests": []
   }
 ]
