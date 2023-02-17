@@ -86,7 +86,7 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2023-02-15T06:44:20.290Z",
-    "modified": "2023-02-17T15:13:29.194Z",
+    "modified": "2023-02-17T17:50:28.380Z",
     "headers": [],
     "params": [],
     "body": {
@@ -103,7 +103,7 @@
         },
         {
           "name": "username",
-          "value": "alopez8"
+          "value": "alopez15"
         },
         {
           "name": "password",
@@ -134,7 +134,7 @@
     "method": "POST",
     "sortNum": 70000,
     "created": "2023-02-15T07:37:04.056Z",
-    "modified": "2023-02-17T15:32:34.177Z",
+    "modified": "2023-02-17T17:18:11.528Z",
     "headers": [],
     "params": [],
     "body": {
@@ -143,7 +143,7 @@
       "form": [
         {
           "name": "username",
-          "value": "alopez4"
+          "value": "alopez7"
         },
         {
           "name": "password",
@@ -174,7 +174,7 @@
     "method": "POST",
     "sortNum": 90000,
     "created": "2023-02-17T03:50:50.354Z",
-    "modified": "2023-02-17T13:37:48.493Z",
+    "modified": "2023-02-17T17:51:33.397Z",
     "headers": [
       {
         "name": "Authorization",
@@ -196,7 +196,7 @@
         },
         {
           "name": "username",
-          "value": "alopez7"
+          "value": "alopez19"
         },
         {
           "name": "password",
@@ -212,7 +212,7 @@
         },
         {
           "name": "role",
-          "value": "admin"
+          "value": "pancho"
         }
       ]
     },
@@ -223,15 +223,15 @@
     "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
     "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
     "name": "delete",
-    "url": "/user/delete/63ef998e13b4019ea82d8162",
+    "url": "/user/delete/63ef87fb5ea2e17e8005a4f7",
     "method": "DELETE",
     "sortNum": 100000,
     "created": "2023-02-17T05:42:04.574Z",
-    "modified": "2023-02-17T15:34:31.393Z",
+    "modified": "2023-02-17T17:18:48.837Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VmOTk4ZTEzYjQwMTllYTgyZDgxNjEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6NCIsImVtYWlsIjoiYWxvcGV6QGtpbmFsLmVkdS5ndCIsInBob25lIjoiMzMwMDMzIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTY3NjY0Nzk1NDE1NSwiZXhwIjoxNjc2NjQ3OTYxMzU1fQ.zfmhnK-jTFbORVWPc_yMuatQTZ-WsnJJ0ms8D4fytzA\""
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VmOGE4YWEyNjMwZWVmOTUxMTc2ZmUiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6NyIsImVtYWlsIjoiYWxvcGV6QGtpbmFsLmVkdS5ndCIsInBob25lIjoiMzM5OTg4Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjc2NjU0MjkxNTE5LCJleHAiOjE2NzY2NTQyOTg3MTl9.6IzbXh15VAXbfiAToTOgq-rN2kpHsrOF4ifGUWcacrA\""
       }
     ],
     "params": [],
@@ -254,6 +254,50 @@
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1e54693a-b9f0-4c04-a531-964a4b538f30",
+    "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
+    "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
+    "name": "update",
+    "url": "/user/update",
+    "method": "PUT",
+    "sortNum": 130000,
+    "created": "2023-02-17T17:37:05.268Z",
+    "modified": "2023-02-17T17:41:44.087Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "alan"
+        },
+        {
+          "name": "surname",
+          "value": "lopez"
+        },
+        {
+          "name": "password",
+          "value": "332"
+        },
+        {
+          "name": "email",
+          "value": "alopez@kinal.org.gt"
+        },
+        {
+          "name": "phone",
+          "value": "39493399"
+        },
+        {
+          "name": "role",
+          "value": "admin"
+        }
+      ]
+    },
     "tests": []
   }
 ]

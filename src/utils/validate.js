@@ -42,3 +42,10 @@ exports.deleteSensitveDate = (user) =>{
         return false;
     }
 }
+
+
+/* exports.deleteOneEntry = update, delEntry => {
+    if (!update) return update;
+    delete update.password;
+    return update;
+}; */

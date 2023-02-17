@@ -90,6 +90,26 @@ exports.login = async(req, res) => {
     }
 };
 
+exports.update = async(req, res)=>{
+    try{
+        let userId = req.params.id;
+        let data = req.body;
+
+        let userUpdated = await User.findOneAndUpdate(
+            {_id: userId},
+            data,
+            {new: true} 
+        );
+        if(!userUpdated) return serverStatus.internal404(res, 'User not found');
+        await deleteSensitiveData(userUpdated);
+        return serverStatus.internal200(res, userUpdated);
+    }catch(err){
+        console.error(err);
+        return serverStatus.internal500(res, 'User not updated', `Username ${err.keyValue.username} is already taken`);
+    }
+}
+
+
 exports.deleted = async(req, res) => {
     try {
         let userId = req.params.id;
