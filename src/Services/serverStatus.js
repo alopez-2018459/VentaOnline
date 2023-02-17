@@ -2,6 +2,7 @@
 
 exports.customStatus = (res, httpStatus, message) => {
     let msgReturn = res.status(httpStatus).send({message: message});
+    return msgReturn;
 };
 
 exports.internal200 = (res, message) => {

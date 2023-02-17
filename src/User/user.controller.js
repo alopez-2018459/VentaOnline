@@ -7,7 +7,7 @@ const { validateData, encrypt, checkPassword } = require('../utils/Validate');
 const { createToken } = require('../Services/jwt');
 
 const serverStatus = require('../Services/serverStatus');
-const { ensureAuth } = require('../Services/auth');
+
 
 let adminStatus = false;
 
@@ -22,6 +22,7 @@ exports.adminSave = async(req, res) => {
         await this.save(req, res);
     } catch (err) {
         console.log(err);
+        return serverStatus.internal500(res, 'User not created', err);
     }
 };
 
@@ -66,13 +67,13 @@ exports.login = async(req, res) => {
 
         let user = await User.findOne({username: data.username});
 
-        let passCheck = await checkPassword(data.password, user.password);
 
-        if(!user || !passCheck) return serverStatus.internal403(res, 'Check your username or password', 'Invalid Credentials');
+        if(!user || await checkPassword(data.password, user.password)) return serverStatus.internal403(res, 'Check your username or password', 'Invalid Credentials');
 
         let token = await createToken(user);
 
         console.log('Logged in as ', user.role);
+
 
         return serverStatus.internal200(res, `Success! ${token}`);  
         
@@ -81,6 +82,27 @@ exports.login = async(req, res) => {
         return serverStatus.internal500(res, 'Login error, not logged in.', err);
     }
 };
+
+    exports.deleted = async(req, res) => {
+    try {
+        let userId = req.params.id;
+
+        console.log(userId);
+
+        let userData = await User.findOne({_id: req.user.sub});
+
+        console.log(userData);
+
+        return serverStatus.internal200(res, `User ${userData.username} deleted`)
+    } catch (err) {
+        console.error(err);
+        return serverStatus.internal500(res, 'Deletion error, user not deleted', err);
+    }
+};
+
+
+
+
 
 
 

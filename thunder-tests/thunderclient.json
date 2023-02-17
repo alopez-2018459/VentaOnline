@@ -134,7 +134,7 @@
     "method": "POST",
     "sortNum": 70000,
     "created": "2023-02-15T07:37:04.056Z",
-    "modified": "2023-02-17T04:52:12.616Z",
+    "modified": "2023-02-17T06:13:33.920Z",
     "headers": [],
     "params": [],
     "body": {
@@ -143,11 +143,11 @@
       "form": [
         {
           "name": "username",
-          "value": "alopez7"
+          "value": "alopez"
         },
         {
           "name": "password",
-          "value": "332"
+          "value": "322"
         }
       ]
     },
@@ -174,7 +174,7 @@
     "method": "POST",
     "sortNum": 90000,
     "created": "2023-02-17T03:50:50.354Z",
-    "modified": "2023-02-17T05:14:51.917Z",
+    "modified": "2023-02-17T05:22:21.085Z",
     "headers": [
       {
         "name": "Authorization",
@@ -196,7 +196,7 @@
         },
         {
           "name": "username",
-          "value": "alopez6"
+          "value": "alopez7"
         },
         {
           "name": "password",
@@ -216,6 +216,25 @@
         }
       ]
     },
+    "tests": []
+  },
+  {
+    "_id": "52b18af8-2885-4455-b968-43c933940a40",
+    "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
+    "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
+    "name": "delete",
+    "url": "/user/delete/63ef0abd6c7d85ca2ff50f5e",
+    "method": "DELETE",
+    "sortNum": 100000,
+    "created": "2023-02-17T05:42:04.574Z",
+    "modified": "2023-02-17T06:15:39.592Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJhbG9wZXoiLCJlbWFpbCI6ImFsb3BlekBraW5hbC5lZHUuZ3QiLCJwaG9uZSI6IjMzMDAzMyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY3NjYxNDQyODE5MSwiZXhwIjoxNjc2NjE0NDM1MzkxfQ.OSH1ydqJYCoez43QLWjXmUfRF1BQX714vqVU45vHufc\""
+      }
+    ],
+    "params": [],
     "tests": []
   }
 ]
