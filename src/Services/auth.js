@@ -14,6 +14,8 @@ exports.ensureAuth = (req, res, next) => {
             let token = req.headers.authorization.replace(/['"]/g, '');
 
             var payload = jwt.decode(token, `${process.env.SECRET_KEY}`);
+
+        
     
             if (Math.floor(Date.now() / 1000) >= payload.exp) {
                 return internal403(res, 'Session Expired', err);

@@ -7,7 +7,8 @@ exports.createToken = (user) => {
          let payload = {
             sub: user._id,
             name: user.name,
-            surname: user.username,
+            surname: user.surname,
+            username: user.username,
             email: user.email,
             phone: user.phone,
             role: user.role,

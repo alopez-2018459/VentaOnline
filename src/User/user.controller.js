@@ -11,12 +11,22 @@ const serverStatus = require('../Services/serverStatus');
 
 let adminStatus = false;
 
-exports.test = async(req, res) => {
+exports.test = async(res) => {
     serverStatus.internal200(res,'User is running');
 };
 
-exports.adminSave = async(req, res) => {
 
+
+exports.loginUser = async(req, res) => {
+    let user = {user: req.user};
+
+    console.log(user);
+    return serverStatus.internal200(res, 'check console log');
+
+    //res.send({message: 'Test function is running', user: req.user});
+};
+
+exports.adminSave = async(req, res) => {
     try {
         adminStatus = true;
         await this.save(req, res);
@@ -25,6 +35,7 @@ exports.adminSave = async(req, res) => {
         return serverStatus.internal500(res, 'User not created', err);
     }
 };
+
 
 
 exports.save = async(req, res) => {
@@ -48,10 +59,6 @@ exports.save = async(req, res) => {
         return serverStatus.internal500(res, 'User not Created', err);
     }
 };
-
-
-
-
 
 
 exports.login = async(req, res) => {
@@ -83,17 +90,26 @@ exports.login = async(req, res) => {
     }
 };
 
-    exports.deleted = async(req, res) => {
+exports.deleted = async(req, res) => {
     try {
         let userId = req.params.id;
 
-        console.log(userId);
+        let userData = await User.findOne({_id: userId}).catch(err => console.error(err));
 
-        let userData = await User.findOne({_id: req.user.sub});
+        let userLoggedIn = {user: req.user}
 
-        console.log(userData);
+        console.log(userLoggedIn);
 
-        return serverStatus.internal200(res, `User ${userData.username} deleted`)
+        if(userData.role == 'ADMIN' && userLoggedIn.user.role == 'ADMIN' ) return serverStatus.internal403(res, "You don't have permissions", 'Access Denied');
+        
+        if(userLoggedIn.user.role == 'CLIENT' && userLoggedIn.user.username !== userData.username) return serverStatus.internal403(res, 'You can only delete your user', 'Access Denied');
+        
+        let userDeleted = await User.findOneAndDelete({_id: userId});
+
+        
+        
+        return serverStatus.internal202(res, `Deleted Account name: ${userDeleted.username} action by ${userLoggedIn.user.username}`);
+        
     } catch (err) {
         console.error(err);
         return serverStatus.internal500(res, 'Deletion error, user not deleted', err);

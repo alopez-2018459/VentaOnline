@@ -5,6 +5,8 @@ exports.customStatus = (res, httpStatus, message) => {
     return msgReturn;
 };
 
+
+
 exports.internal200 = (res, message) => {
     let msgReturn = res.status(200).send({message:`Server 200: OK. ${message}`});
     return msgReturn;
@@ -13,6 +15,12 @@ exports.internal200 = (res, message) => {
 exports.internal201 = (res, message) => {
     let msgReturn = res.status(201).send({message:`Server 201: CREATED. ${message}`});
     return msgReturn;
+};
+
+
+exports.internal202 = (res, message) => {
+    let msgReturn = res.status(202).send({status:'Server 202 Deleted Successfully:', message: message});
+    return msgReturn
 };
 
 exports.internal500 = (res, message, err) => {
