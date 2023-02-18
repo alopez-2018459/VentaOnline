@@ -32,8 +32,13 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-02-15T04:46:31.134Z",
-    "modified": "2023-02-15T04:47:32.464Z",
-    "headers": [],
+    "modified": "2023-02-18T06:18:53.542Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwub3JnLmd0NiIsInBob25lIjoiMzk0OTMzOTkiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY3MDExMTYyMjAsImV4cCI6MTY3NjcwMTEyMzQyMH0.0EaHwrSMNcRPdgS_2frs64SBPKp2_vbATdhBHPyHFLE\""
+      }
+    ],
     "params": [],
     "body": {
       "type": "formencoded",
@@ -41,11 +46,11 @@
       "form": [
         {
           "name": "name",
-          "value": "Clothes"
+          "value": "Food"
         },
         {
           "name": "description",
-          "value": "Clothes"
+          "value": "Food"
         }
       ]
     },
@@ -56,12 +61,33 @@
     "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
     "containerId": "305f9922-28bc-489e-84c6-ec2b8c66693f",
     "name": "edit",
-    "url": "",
-    "method": "GET",
+    "url": "/category/update/63f074d24d909467e1832d17",
+    "method": "PUT",
     "sortNum": 40000,
     "created": "2023-02-15T04:50:28.089Z",
-    "modified": "2023-02-15T04:50:28.089Z",
-    "headers": []
+    "modified": "2023-02-18T06:49:08.055Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwub3JnLmd0NiIsInBob25lIjoiMzk0OTMzOTkiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY3MDExMTYyMjAsImV4cCI6MTY3NjcwMTEyMzQyMH0.0EaHwrSMNcRPdgS_2frs64SBPKp2_vbATdhBHPyHFLE\""
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "a"
+        },
+        {
+          "name": "description",
+          "value": "a"
+        }
+      ]
+    },
+    "tests": []
   },
   {
     "_id": "2987d962-d261-42bf-a089-e9a28805de56",
@@ -253,7 +279,7 @@
     "method": "PUT",
     "sortNum": 130000,
     "created": "2023-02-17T17:37:05.268Z",
-    "modified": "2023-02-18T05:52:02.290Z",
+    "modified": "2023-02-18T05:53:26.594Z",
     "headers": [
       {
         "name": "Authorization",
@@ -279,7 +305,7 @@
         },
         {
           "name": "email",
-          "value": "alopez@kinal.org.gt5"
+          "value": "alopez@kinal.org.gt6"
         },
         {
           "name": "phone",
@@ -291,6 +317,39 @@
         }
       ]
     },
+    "tests": []
+  },
+  {
+    "_id": "55af31e1-ae44-4ee8-b9af-159e94dbf7df",
+    "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
+    "containerId": "305f9922-28bc-489e-84c6-ec2b8c66693f",
+    "name": "delete",
+    "url": "/category/delete/63f0735bd288aa28a957027d",
+    "method": "DELETE",
+    "sortNum": 140000,
+    "created": "2023-02-18T06:37:04.328Z",
+    "modified": "2023-02-18T06:43:05.741Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwub3JnLmd0NiIsInBob25lIjoiMzk0OTMzOTkiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY3MDE3OTYyNDksImV4cCI6MTY3NjcwMTgwMzQ0OX0.2uDTIze57dkZlPaoFdCwodjfvN0cE8wY2_OtAAGIlRs\""
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "d49e9959-9dbe-42c5-bb2a-f48b98d46c9e",
+    "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
+    "containerId": "305f9922-28bc-489e-84c6-ec2b8c66693f",
+    "name": "get",
+    "url": "/category/get",
+    "method": "GET",
+    "sortNum": 150000,
+    "created": "2023-02-18T06:48:32.680Z",
+    "modified": "2023-02-18T06:48:43.251Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]
