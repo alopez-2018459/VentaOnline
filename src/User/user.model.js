@@ -32,7 +32,8 @@ const userSchema = mongoose.Schema({
     role: {
         type: String,
         default: "CLIENT",
-        uppercase: true
+        uppercase: true,
+        enum: ["CLIENT", "ADMIN"]
     }
 });
 

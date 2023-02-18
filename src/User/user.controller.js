@@ -2,7 +2,7 @@
 
 const User = require('./user.model');
 
-const { validateData, encrypt, checkPassword } = require('../utils/Validate');
+const { validateData, encrypt, checkPassword, removePassword, deleteSensitveData } = require('../utils/Validate');
 
 const { createToken } = require('../Services/jwt');
 
@@ -47,9 +47,7 @@ exports.save = async(req, res) => {
 
         data.password = await encrypt(data.password);
 
-        let user = new User(data);
-
-        console.log(user);
+        let user = new User(data); 
 
         await user.save();
 
@@ -94,6 +92,13 @@ exports.update = async(req, res)=>{
     try{
         let userId = req.params.id;
         let data = req.body;
+        let userLoggedIn = {user: req.user};
+
+        console.log(userLoggedIn);
+
+        if(userId !== userLoggedIn.user.sub) return serverStatus.internal403(res, 'Access Denied', 'Not your user');
+
+        removePassword(data);
 
         let userUpdated = await User.findOneAndUpdate(
             {_id: userId},
@@ -101,8 +106,8 @@ exports.update = async(req, res)=>{
             {new: true} 
         );
         if(!userUpdated) return serverStatus.internal404(res, 'User not found');
-        await deleteSensitiveData(userUpdated);
-        return serverStatus.internal200(res, userUpdated);
+        await deleteSensitveData(userUpdated);
+        return serverStatus.customStatus(res, 200, userUpdated);
     }catch(err){
         console.error(err);
         return serverStatus.internal500(res, 'User not updated', `Username ${err.keyValue.username} is already taken`);

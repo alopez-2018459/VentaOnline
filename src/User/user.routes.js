@@ -12,7 +12,7 @@ api.get('/', test);
 api.get('/testLogin', ensureAuth, loginUser);
 api.post('/register', save);
 api.post('/login', login);  
-api.put('/update',ensureAuth, update);
+api.put('/update/:id',ensureAuth, update);
 api.post('/save-admin',[ensureAuth, isAdmin],adminSave);
 api.delete('/delete/:id', ensureAuth, deleted);
 

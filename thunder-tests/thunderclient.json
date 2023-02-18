@@ -86,7 +86,7 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2023-02-15T06:44:20.290Z",
-    "modified": "2023-02-17T17:50:28.380Z",
+    "modified": "2023-02-18T05:31:39.880Z",
     "headers": [],
     "params": [],
     "body": {
@@ -103,7 +103,7 @@
         },
         {
           "name": "username",
-          "value": "alopez15"
+          "value": "alopez41"
         },
         {
           "name": "password",
@@ -119,7 +119,7 @@
         },
         {
           "name": "role",
-          "value": "pancho"
+          "value": "a"
         }
       ]
     },
@@ -134,7 +134,7 @@
     "method": "POST",
     "sortNum": 70000,
     "created": "2023-02-15T07:37:04.056Z",
-    "modified": "2023-02-17T17:18:11.528Z",
+    "modified": "2023-02-18T05:34:09.999Z",
     "headers": [],
     "params": [],
     "body": {
@@ -143,7 +143,7 @@
       "form": [
         {
           "name": "username",
-          "value": "alopez7"
+          "value": "alopez"
         },
         {
           "name": "password",
@@ -154,18 +154,6 @@
     "tests": []
   },
   {
-    "_id": "085081ff-11b2-4a0f-8a1c-bc2d494cd5a8",
-    "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
-    "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
-    "name": "update",
-    "url": "",
-    "method": "GET",
-    "sortNum": 80000,
-    "created": "2023-02-15T08:15:48.406Z",
-    "modified": "2023-02-15T08:15:48.406Z",
-    "headers": []
-  },
-  {
     "_id": "b0619b34-7dee-432a-b997-a7e95d0d10e2",
     "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
     "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
@@ -174,7 +162,7 @@
     "method": "POST",
     "sortNum": 90000,
     "created": "2023-02-17T03:50:50.354Z",
-    "modified": "2023-02-17T17:51:33.397Z",
+    "modified": "2023-02-18T05:31:03.536Z",
     "headers": [
       {
         "name": "Authorization",
@@ -212,7 +200,7 @@
         },
         {
           "name": "role",
-          "value": "pancho"
+          "value": "ADMIN"
         }
       ]
     },
@@ -223,15 +211,15 @@
     "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
     "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
     "name": "delete",
-    "url": "/user/delete/63ef87fb5ea2e17e8005a4f7",
+    "url": "/user/delete/63f062bb2d57807ddd6f7e71",
     "method": "DELETE",
     "sortNum": 100000,
     "created": "2023-02-17T05:42:04.574Z",
-    "modified": "2023-02-17T17:18:48.837Z",
+    "modified": "2023-02-18T05:35:04.924Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VmOGE4YWEyNjMwZWVmOTUxMTc2ZmUiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6NyIsImVtYWlsIjoiYWxvcGV6QGtpbmFsLmVkdS5ndCIsInBob25lIjoiMzM5OTg4Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjc2NjU0MjkxNTE5LCJleHAiOjE2NzY2NTQyOTg3MTl9.6IzbXh15VAXbfiAToTOgq-rN2kpHsrOF4ifGUWcacrA\""
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwuZWR1Lmd0IiwicGhvbmUiOiIzMzAwMzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY2OTg0NDk5ODgsImV4cCI6MTY3NjY5ODQ1NzE4OH0.X-S_rWDeXSyks9P2jbBpU6AfEwFLgL1ZjfSBDgPnD-E\""
       }
     ],
     "params": [],
@@ -261,12 +249,17 @@
     "colId": "548cebea-16ba-45a4-88fa-2a9303e78d83",
     "containerId": "96725aaa-31c2-4356-bed7-1119aa697ef6",
     "name": "update",
-    "url": "/user/update",
+    "url": "/user/update/63ec868197faedc16bf2d0a1",
     "method": "PUT",
     "sortNum": 130000,
     "created": "2023-02-17T17:37:05.268Z",
-    "modified": "2023-02-17T17:41:44.087Z",
-    "headers": [],
+    "modified": "2023-02-18T05:52:02.290Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwuZWR1Lmd0IiwicGhvbmUiOiIzMzAwMzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY2OTkwNjU1MjgsImV4cCI6MTY3NjY5OTA3MjcyOH0.gRASeq5fkaV3UferXLxB--szgxFCbL3cLEcJf_VfljY\""
+      }
+    ],
     "params": [],
     "body": {
       "type": "formencoded",
@@ -282,11 +275,11 @@
         },
         {
           "name": "password",
-          "value": "332"
+          "value": "aaaa"
         },
         {
           "name": "email",
-          "value": "alopez@kinal.org.gt"
+          "value": "alopez@kinal.org.gt5"
         },
         {
           "name": "phone",

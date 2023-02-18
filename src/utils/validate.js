@@ -33,7 +33,7 @@ exports.checkPassword = async(password, hash) => {
     }
 };
 
-exports.deleteSensitveDate = (user) =>{
+exports.deleteSensitveData = (user) =>{
     try {
         delete user.password;
         delete user.role;
@@ -44,8 +44,9 @@ exports.deleteSensitveDate = (user) =>{
 }
 
 
-/* exports.deleteOneEntry = update, delEntry => {
+exports.removePassword = update => {
     if (!update) return update;
     delete update.password;
     return update;
-}; */
+};
+  
