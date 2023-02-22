@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "_id": "fb9fe5e8-e3e0-420e-9617-2e951568592e",
+    "name": "(Global Env)",
+    "default": false,
+    "global": true,
+    "sortNum": -2,
+    "created": "2023-02-22T04:02:13.153Z",
+    "modified": "2023-02-22T04:02:13.153Z",
+    "data": [
+      {
+        "name": "tokenAdmin",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwub3JnLmd0NiIsInBob25lIjoiMzk0OTMzOTkiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzcwMzg0ODIxMTEsImV4cCI6MTY3NzAzODQ4OTMxMX0.zsgbss9uYxB2kxDzX5f7fg9EE9JD_ErWbuOsajq0G9Y"
+      },
+      {
+        "name": "tokenUser",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2YwNWY4NGUyODQ2NTA0ZGFkNDFkZGMiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6MiIsImVtYWlsIjoiYWxvcGV6QGtpbmFsLmVkdS5ndCIsInBob25lIjoiMzMwMDMzIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTY3NzAzODYyOTI4MywiZXhwIjoxNjc3MDM4NjM2NDgzfQ.m0f72xqCs9JZKqKrm6CUbAlQulgHXlUaSmnXaxL0ov0"
+      }
+    ]
+  }
+]

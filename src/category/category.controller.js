@@ -2,7 +2,8 @@
 
 const Category = require('./category.model');
 const serverStatus = require('../Services/serverStatus');
-const { findById, findOneAndDelete, find } = require('./category.model');
+const { validateData } = require('../utils/validate');
+
 
 exports.test = async (req, res) => {
     return res.send({message: 'Category is running'});
@@ -12,11 +13,23 @@ exports.save = async (req, res) => {
     try {
         let data = req.body;
 
+        let requiredData = {
+            name: data.name,
+            description: data.description
+        };
+
+        let msg = validateData(requiredData);
+        if(msg) return serverStatus.internal400(res, msg);
+
+        delete data.products;
+
         let category = new Category(data);
 
         await category.save();
 
-        return res.send({message:'Saved Successfully'});    
+        console.log(category);
+
+        return serverStatus.internal200(res, 'Saved Successfully∂', '');    
     } catch (err) {
         console.error(err);
         serverStatus.internal500(res, 'Esta categoria ya existe', err);
@@ -29,6 +42,9 @@ exports.update = async (req, res) => {
     try {
         let categoryId = req.params.id;
         let data = req.body;
+
+        delete data.products;
+
         let categoryData = await Category.findOneAndUpdate(
             {_id: categoryId},
             data,

@@ -7,8 +7,8 @@ exports.customStatus = (res, httpStatus, message) => {
 
 
 
-exports.internal200 = (res, message) => {
-    let msgReturn = res.status(200).send({message:`Server 200: OK. ${message}`});
+exports.internal200 = (res, message, obj) => {
+    let msgReturn = res.status(200).send({server:`Server 200: OK. ${message}`, obj});
     return msgReturn;
 };
 

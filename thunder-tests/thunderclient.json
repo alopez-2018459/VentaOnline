@@ -32,11 +32,11 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-02-15T04:46:31.134Z",
-    "modified": "2023-02-18T06:18:53.542Z",
+    "modified": "2023-02-22T04:51:43.697Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwub3JnLmd0NiIsInBob25lIjoiMzk0OTMzOTkiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY3MDExMTYyMjAsImV4cCI6MTY3NjcwMTEyMzQyMH0.0EaHwrSMNcRPdgS_2frs64SBPKp2_vbATdhBHPyHFLE\""
+        "value": "{{tokenAdmin}}"
       }
     ],
     "params": [],
@@ -46,11 +46,15 @@
       "form": [
         {
           "name": "name",
-          "value": "Food"
+          "value": "e"
         },
         {
           "name": "description",
-          "value": "Food"
+          "value": "a"
+        },
+        {
+          "name": "products",
+          "value": "a"
         }
       ]
     },
@@ -65,11 +69,11 @@
     "method": "PUT",
     "sortNum": 40000,
     "created": "2023-02-15T04:50:28.089Z",
-    "modified": "2023-02-18T06:49:08.055Z",
+    "modified": "2023-02-22T04:49:01.298Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VjODY4MTk3ZmFlZGMxNmJmMmQwYTEiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJsb3BleiIsInVzZXJuYW1lIjoiYWxvcGV6IiwiZW1haWwiOiJhbG9wZXpAa2luYWwub3JnLmd0NiIsInBob25lIjoiMzk0OTMzOTkiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY3MDExMTYyMjAsImV4cCI6MTY3NjcwMTEyMzQyMH0.0EaHwrSMNcRPdgS_2frs64SBPKp2_vbATdhBHPyHFLE\""
+        "value": "{{tokenAdmin}}"
       }
     ],
     "params": [],
@@ -79,11 +83,11 @@
       "form": [
         {
           "name": "name",
-          "value": "a"
+          "value": "k"
         },
         {
           "name": "description",
-          "value": "a"
+          "value": "k"
         }
       ]
     },
@@ -112,7 +116,7 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2023-02-15T06:44:20.290Z",
-    "modified": "2023-02-18T05:31:39.880Z",
+    "modified": "2023-02-22T04:32:19.441Z",
     "headers": [],
     "params": [],
     "body": {
@@ -129,11 +133,11 @@
         },
         {
           "name": "username",
-          "value": "alopez41"
+          "value": "alopez3"
         },
         {
           "name": "password",
-          "value": "332"
+          "value": "322"
         },
         {
           "name": "email",
@@ -160,7 +164,7 @@
     "method": "POST",
     "sortNum": 70000,
     "created": "2023-02-15T07:37:04.056Z",
-    "modified": "2023-02-18T05:34:09.999Z",
+    "modified": "2023-02-22T04:03:49.291Z",
     "headers": [],
     "params": [],
     "body": {
@@ -169,7 +173,7 @@
       "form": [
         {
           "name": "username",
-          "value": "alopez"
+          "value": "alopez2"
         },
         {
           "name": "password",
@@ -188,11 +192,11 @@
     "method": "POST",
     "sortNum": 90000,
     "created": "2023-02-17T03:50:50.354Z",
-    "modified": "2023-02-18T05:31:03.536Z",
+    "modified": "2023-02-22T04:34:01.857Z",
     "headers": [
       {
         "name": "Authorization",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2M2VmMDRlMGFiNzNjZTFiOWQ1NWQ2ZmQiLCJuYW1lIjoiYWxhbiIsInN1cm5hbWUiOiJhbG9wZXo3IiwiZW1haWwiOiJhbG9wZXpAa2luYWwuZWR1Lmd0IiwicGhvbmUiOiIzMzAwMzMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2NzY2MDk1MzI2MTIsImV4cCI6MTY3NjYwOTUzOTgxMn0.jF0lIZkv9os0MAyZfAAIgjraSloW1YoGtWCRvm3COv4\""
+        "value": "{{tokenAdmin}}"
       }
     ],
     "params": [],
@@ -210,7 +214,7 @@
         },
         {
           "name": "username",
-          "value": "alopez19"
+          "value": "alopez4"
         },
         {
           "name": "password",

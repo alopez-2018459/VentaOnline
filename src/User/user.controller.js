@@ -23,7 +23,6 @@ exports.loginUser = async(req, res) => {
     console.log(user);
     return serverStatus.internal200(res, 'check console log');
 
-    //res.send({message: 'Test function is running', user: req.user});
 };
 
 exports.adminSave = async(req, res) => {
@@ -37,21 +36,28 @@ exports.adminSave = async(req, res) => {
 };
 
 
-
 exports.save = async(req, res) => {
     try {
         
         let data = req.body;
         
-        if(adminStatus == false) delete data.role;
+        !adminStatus ? delete data.role : null;
 
-        data.password = await encrypt(data.password);
+        if(!data.password) return serverStatus.internal400(res, 'Password is required')
+
+        data.password = await encrypt(data.password).catch(err => {
+            console.log(err);
+            serverStatus.internal500(res, 'a', err);
+        });
 
         let user = new User(data); 
 
         await user.save();
 
-        return serverStatus.internal200(res, 'User Created');
+        console.log(user);
+        
+        return serverStatus.internal200(res, 'User Created', '');
+
     } catch (err) {
         console.error(err);
         return serverStatus.internal500(res, 'User not Created', err);
@@ -79,7 +85,6 @@ exports.login = async(req, res) => {
 
         console.log('Logged in as ', user.role);
 
-
         return serverStatus.internal200(res, `Success! ${token}`);  
         
     } catch (err) {
@@ -100,7 +105,7 @@ exports.update = async(req, res)=>{
 
         removePassword(data);
 
-        let userUpdated = await User.findOneAndUpdate(
+        let userUpdated =   await User.findOneAndUpdate(
             {_id: userId},
             data,
             {new: true} 
